@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Weather App</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+
+    <h1 class="title">🌦 Weather Forecast</h1>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city...">
+        <button onclick="getWeather()">
+            <i class="fas fa-search"></i>
+        </button>
+        <button onclick="getLocationWeather()">
+            <i class="fas fa-location-dot"></i>
+        </button>
+    </div>
+
+
+    <div class="current-card">
+        <h2 id="cityName"></h2>
+        <p id="date"></p>
+
+        <div class="main-weather">
+            <img id="weatherIcon">
+            <h1 id="temp"></h1>
+        </div>
+
+        <p id="condition"></p>
+
+        <div class="extra-details">
+            <div class="detail-box">
+                <i class="fas fa-tint"></i>
+                <p id="humidity"></p>
+                <span>Humidity</span>
+            </div>
+
+            <div class="detail-box">
+                <i class="fas fa-wind"></i>
+                <p id="wind"></p>
+                <span>Wind</span>
+            </div>
+
+            <div class="detail-box">
+                <i class="fas fa-smog"></i>
+                <p id="aqi"></p>
+                <span>Air Quality</span>
+            </div>
+        </div>
+   <div id="forecastSection" class="hidden">
+    <h2 class="forecast-title">Next 5 Days</h2>
+    <div class="forecast-container" id="forecastContainer"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> 
