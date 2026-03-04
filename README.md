@@ -20,4 +20,5 @@ The app provides current weather conditions, accurate AQI levels, and a 5-day fo
 - OpenWeatherMap API
 
 ## 🌐 Live Demo
+https://shiva-pradhan.github.io/weather_app/
 
